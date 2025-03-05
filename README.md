@@ -13,6 +13,4 @@ AI-powered system that ensures users provide **authentic** documents while keepi
 - **PostgreSQL** (Data Fortress 🔐)  
 
 👨‍💻 **Team:** 
-[Ayesha Kashif
-Mohammed Abdur rehman
-Noor ul ain]
+[Noor ul ain, Ayesha Kashif, Mohammed Abdur rehman]

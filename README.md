@@ -1,8 +1,5 @@
 # 🛡️ AI-Driven Identity Verification & Document Validation  
-
-🚀 **Welcome to our Secure Identity Verification Project!** 🚀  
-Ever needed to verify an ID online but worried about fraud? We got you covered!  
-Our AI-powered system ensures users provide **authentic** documents while keeping things **secure & seamless.**  
+AI-powered system that ensures users provide **authentic** documents while keeping things **secure & seamless.**  
 
 ## 🔍 What It Does  
  Detects fake or manipulated IDs (No more Photoshop trickery!)  

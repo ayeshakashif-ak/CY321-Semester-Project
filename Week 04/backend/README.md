@@ -1,37 +1,52 @@
-# Docudino Backend
+# 🦕 DocuDino Backend
 
-## Overview
+**DocuDino** is a secure document management system designed to provide robust authentication, multi-factor authentication (MFA), and AI-driven identity verification. This is the backend portion of the project, providing a secure API for user authentication, document management, and AI-powered verification.
 
-Docudino is a secure document management system that leverages multi-factor authentication (MFA), AI-driven identity verification, and database encryption to ensure the privacy and security of user data. This backend handles user authentication, document upload and verification, role-based access control, and more.
+---
 
-The backend is built using **Flask**, and it interacts with a **PostgreSQL** database. It is designed with a focus on security, implementing best practices for secure coding, secure authentication, and database protection.
+## ✨ Features
 
-## Features
+- 🔐 **Secure Authentication** — JWT-based authentication for user login, registration, and session handling
+- 💬 **Role-Based Access Control** — Different access levels for users, admins, and other roles
+- 📄 **Document Upload & Verification** — Secure document upload and verification using AI and encrypted storage
+- 🔑 **Multi-Factor Authentication (MFA)** — Added layer of security through TOTP and QR code generation
+- 🛡️ **Database Security** — Encrypted data storage and secure database practices to protect sensitive information
+- 🗄️ **Audit Logs** — Integrity verification and audit logging for documents and user activities
 
-- **User Authentication**: Secure login, registration, and session management.
-- **Multi-Factor Authentication (MFA)**: Supports Time-based One-Time Passwords (TOTP) and QR code generation.
-- **AI-based Identity Verification**: Integration with AI for user verification and document integrity validation.
-- **Database Security**: Encryption of sensitive data, secure storage of passwords, and audit logging for document integrity.
-- **Role-Based Access Control (RBAC)**: Different access levels for users, admins, and other roles within the application.
-- **Document Upload & Verification**: Users can upload and verify documents securely.
+---
 
-## Table of Contents
+## 🔒 Security & Authentication
 
-1. [Installation](#installation)
-2. [Environment Setup](#environment-setup)
-3. [Directory Structure](#directory-structure)
-4. [Running the Application](#running-the-application)
-5. [Endpoints](#endpoints)
-6. [Security Measures](#security-measures)
-7. [Contributing](#contributing)
-8. [License](#license)
+DocuDino implements several security practices to protect sensitive user data:
 
-## Installation
+- **JWT Tokens** — Secure, stateless user authentication using JSON Web Tokens
+- **Password Hashing** — Passwords are hashed and stored securely using bcrypt
+- **Role-Based Access Control** — Different user roles with restricted access to certain endpoints
+- **Multi-Factor Authentication** — Supports OTP generation via Time-based One-Time Passwords (TOTP) for added security
+- **Database Encryption** — Sensitive data such as user profiles and documents are encrypted
+- **Audit Logging** — Logs are generated for important user actions to ensure system integrity
 
-To run the Docudino backend locally, follow these steps:
+> ✅ These security practices ensure that DocuDino is both secure and scalable.
 
-### Clone the Repository
+---
 
-```bash
-git clone https://github.com/your-username/docudino-backend.git
-cd docudino-backend
+## 🧰 Tech Stack
+
+- **Flask** — Python web framework for building the backend
+- **SQLAlchemy** — ORM for interacting with the PostgreSQL database
+- **PostgreSQL** — Relational database for secure and scalable data storage
+- **JWT** — JSON Web Tokens for secure user authentication
+- **bcrypt** — Secure hashing for storing user passwords
+- **TOTP** — Time-based One-Time Password (MFA) generation
+- **Flask-Migrate** — Database migration tool for schema changes
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+Ensure you have the following installed:
+
+- [Python 3.x](https://www.python.org/downloads/)
+- [PostgreSQL](https://www.postgresql.org/download/)

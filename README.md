@@ -1,7 +1,7 @@
-# 🦕 DocuDino</span> – AI-Driven Identity Verification & Document Validation
+# DocuDino – AI-Driven Identity Verification & Document Validation
 ![DocuDino](https://img.shields.io/badge/DocuDino-green?style=for-the-badge&logo=dinosaurs)
 
-## 📌 Project Overview
+## Project Overview
 
 In an increasingly digital world, ensuring the authenticity of identities and documents is paramount. **DocuDino** is an **AI-driven identity verification and document validation system** designed to offer secure, efficient, and reliable identity authentication. The platform uses advanced technologies, including deep learning models for forgery detection, Optical Character Recognition (OCR) for data extraction, and real-time facial recognition to verify the person behind the document.
 
@@ -9,7 +9,7 @@ With the growing need for digital security, **DocuDino** guarantees the authenti
 
 ---
 
-## 🛠 Key Features
+## Key Features
 
 - **Forgery Detection**: 
   - Leveraging AI-based deep learning models to automatically detect tampered or forged documents by analyzing patterns, inconsistencies, and anomalies.
@@ -28,7 +28,7 @@ With the growing need for digital security, **DocuDino** guarantees the authenti
 
 ---
 
-## 🏛 Use Cases
+## Use Cases
 
 DocuDino serves various industries where identity verification and document validation are critical. Key applications include:
 
@@ -43,7 +43,7 @@ DocuDino serves various industries where identity verification and document vali
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Backend**: 
   - **Flask/Django** for API development.
@@ -68,9 +68,9 @@ DocuDino serves various industries where identity verification and document vali
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### ✅ Prerequisites
+### Prerequisites
 
 Ensure you have the following installed before running the project locally:
 

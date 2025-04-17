@@ -1,17 +1,17 @@
-# 🦕 DocuDino Backend
+# DocuDino Backend
 
 **DocuDino** is a secure document management system designed to provide robust authentication, multi-factor authentication (MFA), and AI-driven identity verification. This is the backend portion of the project, providing a secure API for user authentication, document management, and AI-powered verification.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🔐 **Secure Authentication** — JWT-based authentication for user login, registration, and session handling
-- 💬 **Role-Based Access Control** — Different access levels for users, admins, and other roles
-- 📄 **Document Upload & Verification** — Secure document upload and verification using AI and encrypted storage
-- 🔑 **Multi-Factor Authentication (MFA)** — Added layer of security through TOTP and QR code generation
-- 🛡️ **Database Security** — Encrypted data storage and secure database practices to protect sensitive information
-- 🗄️ **Audit Logs** — Integrity verification and audit logging for documents and user activities
+- **Secure Authentication** — JWT-based authentication for user login, registration, and session handling
+- **Role-Based Access Control** — Different access levels for users, admins, and other roles
+- **Document Upload & Verification** — Secure document upload and verification using AI and encrypted storage
+- **Multi-Factor Authentication (MFA)** — Added layer of security through TOTP and QR code generation
+- **Database Security** — Encrypted data storage and secure database practices to protect sensitive information
+- **Audit Logs** — Integrity verification and audit logging for documents and user activities
 
 ---
 
@@ -26,11 +26,11 @@ DocuDino implements several security practices to protect sensitive user data:
 - **Database Encryption** — Sensitive data such as user profiles and documents are encrypted
 - **Audit Logging** — Logs are generated for important user actions to ensure system integrity
 
-> ✅ These security practices ensure that DocuDino is both secure and scalable.
+> These security practices ensure that DocuDino is both secure and scalable.
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Flask** — Python web framework for building the backend
 - **SQLAlchemy** — ORM for interacting with the PostgreSQL database

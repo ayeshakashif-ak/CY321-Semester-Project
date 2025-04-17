@@ -5,17 +5,17 @@
 
 ---
 
-## ✨ Features
+## Features
 
-- 🦕 **Modern UI** — Responsive and user-friendly interface built with modern web technologies  
-- 🔐 **Secure Authentication** — User login, registration, and session handling  
-- 📄 **AI-Powered Document Verification** — Intelligent analysis for document validation  
-- 📊 **User Dashboard** — View and manage verified documents with analytics  
-- 🎨 **Clean Design** — Simple, elegant, and efficient UX  
+- **Modern UI** — Responsive and user-friendly interface built with modern web technologies  
+- **Secure Authentication** — User login, registration, and session handling  
+- **AI-Powered Document Verification** — Intelligent analysis for document validation  
+- **User Dashboard** — View and manage verified documents with analytics  
+- **Clean Design** — Simple, elegant, and efficient UX  
 
 ---
 
-## 🔒 Security & Authentication
+## Security & Authentication
 
 DocuDino implements robust security practices to protect user data and ensure reliable authentication:
 

@@ -1,0 +1,612 @@
+/* Mobile Responsive Styles for DocuDino */
+
+/* Mobile menu styles */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--dark-text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 110;
+}
+
+/* Responsive Breakpoints */
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+  .header {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .hero {
+    padding: 6rem 2rem 5rem;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+  
+  .feature-grid,
+  .use-cases-grid {
+    gap: 2rem;
+  }
+  
+  .feature-card, 
+  .use-case-card {
+    padding: 2rem;
+  }
+  
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .steps-connector {
+    display: none;
+  }
+  
+  .verification-page,
+  .dashboard,
+  .features,
+  .how-it-works,
+  .use-cases,
+  .features-cta {
+    padding: 4rem 2rem;
+  }
+}
+
+/* Enhanced tablet styles (iPad specific) */
+@media (min-width: 768px) and (max-width: 992px) {
+  /* iPad specific adjustments */
+  .hero {
+    padding: 7rem 3rem 6rem;
+    min-height: 60vh;
+  }
+  
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    max-width: 80%;
+  }
+  
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  
+  .login-prompt {
+    margin-top: 1.5rem;
+  }
+  
+  /* Features section on iPad */
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.8rem;
+  }
+  
+  /* Feature showcase for iPad */
+  .feature-showcase {
+    padding: 6rem 3rem;
+  }
+  
+  .feature-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .feature-showcase-content {
+    text-align: center;
+  }
+  
+  .feature-showcase-content h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .feature-showcase-image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Forms on iPad */
+  .auth-card {
+    max-width: 500px;
+    padding: 2.5rem;
+  }
+  
+  .auth-form input[type="text"],
+  .auth-form input[type="email"],
+  .auth-form input[type="password"] {
+    height: 55px;
+    font-size: 1.1rem;
+  }
+  
+  /* Dashboard layout for iPad */
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Document verification layout */
+  .verification-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .verification-result {
+    margin-top: 2rem;
+  }
+  
+  /* Better touch targets for iPad */
+  .cta-button, 
+  .hero-button, 
+  .auth-button,
+  .header nav a {
+    padding: 1.2rem 2.5rem;
+  }
+  
+  /* Document types section for iPad */
+  .feature-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  /* Mobile Navigation */
+  .mobile-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .header nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: var(--light-bg);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    padding: 5rem 2rem 2rem;
+    z-index: 100;
+    overflow-y: auto;
+  }
+  
+  .header nav.mobile-menu-open {
+    right: 0;
+  }
+  
+  .header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .header nav a {
+    font-size: 1.1rem;
+    width: 100%;
+    display: block;
+  }
+  
+  .register-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 5rem 1rem 3rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-image {
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+  
+  /* Call to Action Buttons */
+  .auth-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .cta-button {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    min-width: unset;
+  }
+  
+  .get-started-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  
+  /* Features Section */
+  .feature-grid,
+  .use-cases-grid,
+  .steps-container,
+  .stats-grid,
+  .feature-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Improved spacing for better readability */
+  .section-header {
+    margin-bottom: 3.5rem;
+  }
+  
+  .features h2,
+  .verification-page h1,
+  .dashboard h1 {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  /* Testimonial improvements */
+  .testimonial-card {
+    padding: 2rem;
+  }
+  
+  /* Dashboard */
+  .dashboard-content {
+    gap: 2rem;
+  }
+  
+  .activity-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .activity-status {
+    align-self: flex-start;
+  }
+  
+  /* Auth Form */
+  .auth-card {
+    padding: 1.5rem;
+    box-shadow: var(--subtle-shadow);
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .auth-button {
+    padding: 0.75rem;
+  }
+  
+  .auth-header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Verification Page */
+  .upload-box {
+    padding: 1.5rem;
+  }
+  
+  .verify-button {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  /* Feature showcase */
+  .feature-showcase {
+    padding: 3rem 1.5rem;
+  }
+  
+  .feature-showcase-content h2 {
+    font-size: 2rem;
+  }
+  
+  .feature-showcase-content p {
+    font-size: 1rem;
+  }
+  
+  /* Features Hero */
+  .features-hero {
+    padding: 5rem 1.5rem 3rem;
+  }
+  
+  .features-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .features-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .feature-detail-card {
+    padding: 2rem;
+  }
+  
+  /* Form elements */
+  .input-container {
+    display: flex;
+  }
+  
+  .auth-form input[type="text"],
+  .auth-form input[type="email"],
+  .auth-form input[type="password"] {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  /* Fixed padding in various areas */
+  .recent-activity,
+  .feature-card,
+  .use-case-card,
+  .step-card {
+    padding: 1.5rem;
+  }
+  
+  /* Footer improvements */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  
+  /* Table overflow */
+  .comparison-table {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Extra small devices (phones, less than 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .hero-image {
+    margin-top: 1.5rem;
+  }
+  
+  .features h2,
+  .verification-page h1,
+  .dashboard h1,
+  .auth-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle,
+  .feature-card p,
+  .use-case-card p,
+  .step-card p {
+    font-size: 0.95rem;
+  }
+  
+  .feature-card h3,
+  .use-case-card h3,
+  .step-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .stat-card .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .auth-form input[type="text"],
+  .auth-form input[type="email"],
+  .auth-form input[type="password"] {
+    padding: 0.9rem 0.9rem 0.9rem 2.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .input-icon {
+    left: 0.75rem;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .verify-button,
+  .auth-button {
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+  
+  .upload-label {
+    font-size: 1rem;
+  }
+  
+  .upload-label::before {
+    font-size: 2.5rem;
+  }
+  
+  .features-hero h1, 
+  .features-cta h2 {
+    font-size: 1.8rem;
+  }
+  
+  .feature-showcase-content h2 {
+    font-size: 1.75rem;
+  }
+  
+  .feature-showcase-content p {
+    font-size: 0.95rem;
+  }
+  
+  .activity-title {
+    font-size: 0.95rem;
+  }
+  
+  .activity-meta {
+    font-size: 0.8rem;
+  }
+}
+
+/* Very small devices (smaller phones, less than 375px) */
+@media (max-width: 375px) {
+  .header {
+    padding: 0.85rem 1rem;
+  }
+  
+  .header .logo a {
+    font-size: 1.2rem;
+  }
+  
+  .mobile-menu-button {
+    padding: 0.25rem;
+  }
+  
+  .hero h1 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.85rem 1.25rem;
+  }
+  
+  .auth-card {
+    padding: 1.25rem;
+  }
+  
+  .features h2,
+  .verification-page h1,
+  .dashboard h1,
+  .auth-header h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Fix for orientation changes */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    padding: 2rem 2rem;
+    min-height: auto;
+  }
+  
+  .hero-cta {
+    margin-top: 1.5rem;
+  }
+  
+  .auth-card {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+  }
+  
+  .mobile-menu-button {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+/* Fix for mobile menu overlay */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  animation: fadeIn 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+  display: block;
+}
+
+/* Additional accessibility improvements for touch devices */
+@media (hover: none) {
+  .cta-button,
+  .auth-button,
+  .verify-button,
+  .header nav a,
+  .feature-card,
+  .use-case-card {
+    transition: transform 0.2s ease;
+  }
+  
+  .cta-button:active,
+  .auth-button:active,
+  .verify-button:active {
+    transform: scale(0.98);
+  }
+  
+  .feature-card:active,
+  .use-case-card:active {
+    transform: translateY(-5px);
+  }
+}
+
+/* Fix for mobile fixed positioning (addresses iOS issues) */
+@supports (-webkit-touch-callout: none) {
+  .header nav {
+    padding-bottom: 100px;
+  }
+}

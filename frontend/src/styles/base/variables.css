@@ -1,0 +1,28 @@
+/* frontend/src/styles/base/variables.css */
+:root {
+  /* Squarespace-inspired color palette with subtle enhancements */
+  --primary-color: #121212;        /* Almost black */
+  --primary-hover: #333333;        /* Dark gray for hover states */
+  --secondary-color: #707070;      /* Medium gray */
+  --accent-color: #0072ff;         /* Clean blue accent for highlights */
+  --accent-soft: rgba(0, 114, 255, 0.1); /* Soft blue for subtle backgrounds */
+  --light-bg: #ffffff;             /* Pure white background */
+  --light-gray-bg: #f7f7f7;        /* Light gray background */
+  --off-white: #fafafa;            /* Off-white for subtle contrast */
+  --card-bg: #ffffff;              /* White for cards */
+  --dark-text: #121212;            /* Almost black text */
+  --medium-text: #505050;          /* Medium gray text */
+  --light-text: #909090;           /* Light gray text */
+  --border-color: #e0e0e0;         /* Light border color */
+  --max-width: 1280px;             /* Max width for content */
+  
+  /* Refined shadows */
+  --subtle-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --hover-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  
+  /* Border radii - more subtle than before */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+}

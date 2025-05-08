@@ -1,0 +1,98 @@
+/* frontend/src/styles/components/header.css */
+.header {
+  background: var(--light-bg);
+  padding: 1.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header .logo a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--primary-color);
+  letter-spacing: -0.02em;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: var(--medium-text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.header nav a:hover {
+  color: var(--dark-text);
+}
+
+.header nav a:hover::after {
+  width: 100%;
+}
+
+/* Active nav item */
+.header nav a.active {
+  color: var(--dark-text);
+}
+
+.header nav a.active::after {
+  width: 100%;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: var(--medium-text);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.logout-button:hover {
+  color: var(--dark-text);
+}
+
+.register-button {
+  background-color: var(--primary-color);
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.3s ease;
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

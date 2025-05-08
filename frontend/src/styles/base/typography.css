@@ -1,0 +1,10 @@
+/* frontend/src/styles/base/typography.css */
+/* No need to import from Google Fonts anymore */
+
+/* Instead, just set the font-family in your CSS like this: */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+/* Typography styles can be added here */

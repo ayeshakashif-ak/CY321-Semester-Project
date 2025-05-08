@@ -1,0 +1,279 @@
+/* frontend/src/styles/pages/mfa.css */
+/* MFA Setup and Verification Page Styles */
+
+/* MFA Setup container */
+.mfa-setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.mfa-setup h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 0.5rem;
+}
+
+.mfa-setup p {
+  color: var(--medium-text);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* QR Code styling */
+.qr-code {
+  width: 180px;
+  height: 180px;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-md);
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Manual code display */
+.mfa-manual-code {
+  background: var(--light-gray-bg);
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+  font-size: 0.9rem;
+  width: 100%;
+  word-break: break-all;
+  margin: 1rem 0;
+  border: 1px dashed var(--border-color);
+}
+
+.mfa-manual-code strong {
+  color: var(--dark-text);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Verification form */
+.verification-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.verification-form p {
+  margin-bottom: 1.5rem;
+}
+
+.verification-form .form-group {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.verification-form .input-container {
+  width: 100%;
+}
+
+.verification-form input {
+  padding: 1rem 1rem 1rem 3rem;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  background: var(--light-bg);
+  color: var(--dark-text);
+  transition: all 0.2s ease;
+}
+
+.verification-form input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(0, 114, 255, 0.2);
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* MFA Error state */
+.mfa-error {
+  text-align: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mfa-error p {
+  color: var(--medium-text);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Email display in MFA verification */
+.email-display {
+  font-size: 1rem;
+  background: var(--light-gray-bg);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-md);
+  margin-top: 0.75rem;
+  display: inline-block;
+}
+
+.email-display strong {
+  color: var(--accent-color);
+}
+
+/* Form hint text */
+.form-hint {
+  font-size: 0.85rem;
+  color: var(--light-text);
+  margin-top: 0.5rem;
+}
+
+/* Loading container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  gap: 1.5rem;
+}
+
+.loading-container .loading-spinner {
+  font-size: 2rem;
+}
+
+.loading-container p {
+  color: var(--medium-text);
+}
+
+/* Text button */
+.text-button {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.text-button:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Improve alignment for auth-form-input */
+.auth-form-input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  background: var(--light-bg);
+  font-size: 1rem;
+  color: var(--dark-text);
+  transition: all 0.2s ease;
+}
+
+.auth-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(0, 114, 255, 0.2);
+}
+
+/* Add animation for scale in effect */
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Ensure auth button styling is consistent */
+.auth-button {
+  width: 100%;
+  padding: 1rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-button:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+.auth-button:disabled {
+  background: var(--disabled-color);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.auth-button.secondary {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--medium-text);
+}
+
+.auth-button.secondary:hover {
+  background: var(--light-gray-bg);
+  color: var(--dark-text);
+}
+
+/* Add shimmer effect for buttons */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-100%);
+}
+
+.btn-shimmer:hover::after {
+  transform: translateX(100%);
+  transition: transform 0.7s ease-in-out;
+}
